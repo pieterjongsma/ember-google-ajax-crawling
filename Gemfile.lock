@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rails-api/active_model_serializers.git
+  revision: e3bfd07ac47b76c69a22a7a4c357c053cd935b91
+  specs:
+    active_model_serializers (0.5.2)
+      activemodel (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,8 +21,6 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    active_model_serializers (0.6.0)
-      activemodel (>= 3.0)
     activemodel (3.2.11)
       activesupport (= 3.2.11)
       builder (~> 3.0.0)
@@ -134,6 +139,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   coffee-rails (~> 3.2.1)
   compass-rails
   ember-rails
