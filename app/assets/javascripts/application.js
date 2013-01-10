@@ -19,4 +19,12 @@
 //= require ember
 //= require ember-data
 //
+//= require_self
 //= require_tree .
+
+
+App = Ember.Application.create();
+App.Store = DS.Store.extend({
+  revision: 11,
+  adapter: DS.RESTAdapter
+});

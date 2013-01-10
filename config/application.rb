@@ -63,5 +63,7 @@ module ItemApp
     # Line is added to silence warnings: using own .js files in vendor/assets
     # This allows more control and currently more up-to-date files as Ember.js is changing so rapidly
     config.ember.variant = :production
+    # Make handlebar template names cleaner by removing the app/templates prefix
+    config.handlebars.templates_root = 'app/templates'
   end
 end
