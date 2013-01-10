@@ -58,5 +58,10 @@ module ItemApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Specify which variant (development: not minified) of Ember to use
+    # Line is added to silence warnings: using own .js files in vendor/assets
+    # This allows more control and currently more up-to-date files as Ember.js is changing so rapidly
+    config.ember.variant = :production
   end
 end
