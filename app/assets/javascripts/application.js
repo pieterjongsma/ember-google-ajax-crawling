@@ -19,12 +19,19 @@
 //= require ember
 //= require ember-data
 //
+//= require ember_hash_exclamation
+//
 //= require_self
 //= require_tree .
 
 
-App = Ember.Application.create();
-App.Store = DS.Store.extend({
-  revision: 11,
-  adapter: DS.RESTAdapter
+App = Ember.Application.create({
+  Store: DS.Store.extend({
+    revision: 11,
+    adapter: DS.RESTAdapter
+  }),
+  
+  Router: Ember.Router.extend({
+    location: 'hash_exclamation'
+  })
 });
