@@ -51,6 +51,7 @@ GEM
       sass (~> 3.1)
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
+    daemon_controller (1.1.0)
     ember-rails (0.8.0)
       active_model_serializers
       execjs (>= 1.2)
@@ -58,6 +59,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fastthread (1.0.7)
     fssm (0.2.9)
     hike (1.2.1)
     i18n (0.6.1)
@@ -76,6 +78,11 @@ GEM
       compass (>= 0.11.5)
       sassy-math (>= 1.2)
     multi_json (1.5.0)
+    passenger (3.0.19)
+      daemon_controller (>= 1.0.0)
+      fastthread (>= 1.0.1)
+      rack
+      rake (>= 0.8.1)
     polyglot (0.3.3)
     rack (1.4.3)
     rack-cache (1.2)
@@ -144,6 +151,7 @@ DEPENDENCIES
   compass-rails
   ember-rails
   jquery-rails
+  passenger
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3
