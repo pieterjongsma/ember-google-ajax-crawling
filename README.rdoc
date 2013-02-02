@@ -1,1 +1,3 @@
 == Ember Google Ajax crawling
+
+You can find the article accompanying this code at: http://www.pieterjongsma.com/2013/01/11/ember-google-ajax-rails.html
